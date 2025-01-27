@@ -1,6 +1,6 @@
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import Feather from "@expo/vector-icons/Feather";
-import formatDate from "./utils/formatDate";
+import formatDate from "../utils/formatDate";
 import { Link } from "expo-router";
 
 export default function Index() {
