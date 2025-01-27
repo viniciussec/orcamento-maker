@@ -34,27 +34,27 @@ export default function Form() {
         </TouchableOpacity>
       </View>
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Nome"
         placeholderTextColor="#aaa"
       />
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Responsável"
         placeholderTextColor="#aaa"
       />
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Endereço"
         placeholderTextColor="#aaa"
       />
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Telefone"
         placeholderTextColor="#aaa"
       />
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Email"
         placeholderTextColor="#aaa"
       />
@@ -62,7 +62,7 @@ export default function Form() {
       {Array.from({ length: itemsQuantity }).map((_, index) => (
         <TextInput
           key={index}
-          className="bg-gray-700 p-4 mt-4 rounded-md"
+          className="bg-gray-700 p-4 mt-4 rounded-md text-white"
           placeholder="Descrição do item/serviço"
           placeholderTextColor="#aaa"
         />
@@ -84,50 +84,60 @@ export default function Form() {
         </TouchableOpacity>
       )}
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Valor final"
         placeholderTextColor="#aaa"
       />
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Forma de pagamento"
         placeholderTextColor="#aaa"
       />
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Tempo de execução"
         placeholderTextColor="#aaa"
       />
 
       <Text className="text-gray-200 text-lg mt-4">Dados do cliente</Text>
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Nome do cliente"
         placeholderTextColor="#aaa"
       />
       <Text className="text-gray-200 text-lg mt-4">Dados para pagamento</Text>
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Banco"
         placeholderTextColor="#aaa"
       />
 
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Agência"
         placeholderTextColor="#aaa"
       />
 
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Conta"
         placeholderTextColor="#aaa"
       />
 
       <TextInput
-        className="bg-gray-700 p-4 mt-4 rounded-md"
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white"
         placeholder="Chave PIX"
         placeholderTextColor="#aaa"
+      />
+
+      <Text className="text-gray-200 text-lg mt-4">Informações adicionais</Text>
+
+      <TextInput
+        multiline
+        className="bg-gray-700 p-4 mt-4 rounded-md text-white h-24 text-start align-top"
+        placeholder="Observações"
+        placeholderTextColor="#aaa"
+        numberOfLines={3}
       />
 
       <TouchableOpacity className="bg-green-800 p-4 rounded-md flex-row items-center justify-center mt-4">

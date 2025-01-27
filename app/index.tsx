@@ -2,22 +2,10 @@ import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import Feather from "@expo/vector-icons/Feather";
 import formatDate from "./utils/formatDate";
 import { Link } from "expo-router";
+import { useServiceQuotesStore } from "./store/service-quotes";
 
 export default function Index() {
-  const serviceQuotes = [
-    {
-      clientName: "João da Silva",
-      date: "2021-09-01",
-    },
-    {
-      clientName: "Maria Oliveira",
-      date: "2021-09-02",
-    },
-    {
-      clientName: "José Pereira",
-      date: "2021-09-03",
-    },
-  ];
+  const { serviceQuotes } = useServiceQuotesStore();
 
   return (
     <ScrollView className="bg-gray-800 h-full p-4">
@@ -39,7 +27,7 @@ export default function Index() {
           className="bg-gray-700 p-4 rounded-md mt-4"
         >
           <View className="flex flex-row justify-between">
-            <Text className="text-white font-bold">{quote.clientName}</Text>
+            <Text className="text-white font-bold">{quote.client_name}</Text>
             <Text className="text-white">{formatDate(quote.date)}</Text>
           </View>
         </TouchableOpacity>
