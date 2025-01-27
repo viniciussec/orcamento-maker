@@ -1,9 +1,12 @@
-import 'ts-node/register'; // Add this to import TypeScript files
-import { ExpoConfig } from 'expo/config';
+import "ts-node/register"; // Add this to import TypeScript files
+import { ExpoConfig } from "expo/config";
 
 const config: ExpoConfig = {
-  name: 'my-app',
-  slug: 'my-app',
+  name: "orcamento-maker",
+  slug: "orcamento-maker",
+  scheme: "orcamento-maker",
+  userInterfaceStyle: "automatic",
+  newArchEnabled: true,
 };
 
 export default config;

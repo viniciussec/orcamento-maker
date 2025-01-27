@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { ServiceQuote } from "../types/service-quote.d";
+import { ServiceQuote } from "../types/service-quote";
 import { persist, createJSONStorage } from "zustand/middleware";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
